@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<display-name>Helloworld</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!-- 밑에 작업은 어노테이션 @WebServelt()으로 대처할 수 있다-->
+    <servlet>
+        <servlet-name>helloworld</servlet-name>
+        <!--name은 개발자 임의로 정할 수 있다 -->
+        <servlet-class>com.sdh.ex.HelloWorld</servlet-class>
+        <!-- class는 매핑할 클래스 파일명을 패키지까지 같이 정확하게 입력>
+        여기까지 했을때 helloworld에 빨간줄인 가진건 servlet-mapping를 작성하지 않아서이다-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloworld</servlet-name>
+        <url-pattern>/hw</url-pattern>
+        <!-- servelt-class의 클래스를 매핑할 임의의 이름을 쓰되 "/"시작-->
+    </servlet-mapping>
+
+
+
+
+
+</web-app>
