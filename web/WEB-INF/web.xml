@@ -38,6 +38,18 @@
     </servlet-mapping>
 
 
+    <context-param>
+        <param-name>id</param-name>
+        <param-value>abc</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pw</param-name>
+        <param-value>123</param-value>
+    </context-param>
+    
+    <listener>
+        <listener-class>com.sdh.ex.ServletL</listener-class>
+    </listener>
     
 <!--<display-name>ex</display-name>-->
 <!--    <welcome-file-list>-->
