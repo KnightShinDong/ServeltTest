@@ -9,8 +9,9 @@
 <html>
   <head>
     <title>insert title here</title>
-  </head>
+  </head>S
   <body>
-  helloworld!
+  hello
+  <button type="button" value="테스트" onclick="location.href='form.jsp'"></button>
   </body>
 </html>
